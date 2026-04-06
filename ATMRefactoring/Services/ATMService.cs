@@ -19,8 +19,6 @@ namespace ATMRefactoring.Services
             DispenseCash(handle, amount);
         }
 
-        // -------- VALIDATIONS --------
-
         private void ValidateDevice(DeviceRecord record)
         {
             if (record.IsLocked)
@@ -41,7 +39,6 @@ namespace ATMRefactoring.Services
                 throw new InsufficientFundsException("Insufficient funds");
         }
 
-        // -------- SIMULATED METHODS --------
 
         private DeviceHandle GetHandle()
         {
@@ -59,7 +56,7 @@ namespace ATMRefactoring.Services
 
         private double GetBalance(string accountId)
         {
-            return 1000; // dummy
+            return 1000;
         }
 
         private void DispenseCash(DeviceHandle handle, double amount)
