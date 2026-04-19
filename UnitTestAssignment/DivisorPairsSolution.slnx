@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DivisorPairs.Tests/DivisorPairs.Tests.csproj" />
+  <Project Path="DivisorPairs/DivisorPairs.csproj" />
+</Solution>
